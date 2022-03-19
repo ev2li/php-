@@ -30,4 +30,20 @@ $a = 3 + 4 -6
 
 ![img](https://box.kancloud.cn/16bf76a3daca3fe633e9f71216cb4290_479x293.png)
 
+
+
+![img](https://box.kancloud.cn/d9c4996f3723b6cde73658ed06145ccd_863x151.png)
+
+其中zendparse()就是词法和语法分析，这个函数实际上就是bison中的yyparse()
+
+```c
+#define yyparse         zendparse
+```
+
+yyparse()不断调用yylex()得到token，然后根据token匹配语法规则:
+
+![img](https://box.kancloud.cn/1c22b1b50c758679d4873ee0a721441c_532x230.png)
+
+
+
 ### 3.3抽象语法树编译流程
