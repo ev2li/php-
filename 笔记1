@@ -1,0 +1,16 @@
+b ZEND_ECHO_SPEC_CV_HANDLER
+p *$16.value.obj
+p *$9.value.str.val@6
+
+#define IS_UNDEF 0
+#define IS_NULL 1
+#define IS_FALSE 2
+#define IS_TRUE 3
+#define IS_LONG 4
+#define IS_DOUBLE 5
+#define IS_STRING 6
+#define IS_ARRAY 7
+#define IS_OBJECT 8
+#define IS_RESOURCE 9
+#define IS_REFERENCE 10
+
